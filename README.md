@@ -3,7 +3,7 @@ Requisitos :
 1. Tener instalado MongoDB
 2. Tener instalado Node js
 
--> se requiere tener una base de datos llamada <strong>eventoapp<strong><br>
+-> se requiere tener una base de datos llamada <strong>eventoapp</strong><br>
 -> se requiere configurar la API_KEY en el archivo <code>/public/assets/js/index.js</code><br>
 <code>
 Vue.use(VueGoogleMaps, { <br>
