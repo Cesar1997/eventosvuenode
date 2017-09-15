@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa Google</title>
+</head>
+<body>
+    <div id="root">
+    <gmap-map 
+        style="width: 100%; height: 100%; position: absolute; left:0; top:30"
+        :center="centermap"
+        :zoom="zoom"
+        @click="clickAddMarker"
+    >
+        <gmap-marker v-for="marker in markers"
+                    :label="marker.name"
+                    :title="marker.name"
+                    :position="{lat: marker.lat, lng: marker.lng}" 
+                    @click="clickMarker"
+        ></gmap-marker>
+        <gmap-polyline 
+            :path="[centermap,{lat:14.518450612659096,lng :-89.725341796875}]">
+        </gmap-polyline>
+    </gmap-map>
+  </div>
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/vue2-google-maps/dist/vue-google-maps.js"></script>
+<script src="../node_modules/axios/dist/axios.js"></script>
+<script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="assets/js/index.js"></script>
+</html>

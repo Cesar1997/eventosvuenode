@@ -1,0 +1,26 @@
+{
+  "name": "eventos",
+  "version": "1.0.0",
+  "description": "app ejemplo practica vue y node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Cesxr PM",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.11",
+    "mysql": "^2.14.1",
+    "socket.io": "^2.0.3",
+    "vue": "^2.4.2",
+    "vue-material": "^0.7.5",
+    "vue-socket.io": "^2.1.1-a",
+    "vue2-google-maps": "^0.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}
